@@ -1,0 +1,13 @@
+.par{
+    border: 2px solid black;
+    background-color: rgb(120, 202, 215);
+    
+}
+.par p{
+    color:black;
+    font-size: 20px;
+    opacity: 0.6;
+}
+.tex{
+    text-align: center;
+}

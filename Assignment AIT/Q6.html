@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(23, 168, 10);
+      transition: transform 0.3s;
+    }
+
+    .translate {
+      transform: translate(100px, 50px);
+    }
+
+
+    .rotate {
+      transform: rotate(45deg);
+    }
+
+    .scale {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div><br><br>
+  <button onclick="translateBox()">Translate</button><br><br>
+  <button onclick="rotateBox()">Rotate</button><br><br>
+  <button onclick="scaleBox()">Scale</button><br><br>
+
+  <script>
+    function translateBox() {
+      var box = document.querySelector('.box');
+      box.classList.toggle('translate');
+    }
+    
+    function rotateBox() {
+      var box = document.querySelector('.box');
+      box.classList.toggle('rotate');
+    }
+
+    function scaleBox() {
+      var box = document.querySelector('.box');
+      box.classList.toggle('scale');
+    }
+  </script>
+</body>
+</html>

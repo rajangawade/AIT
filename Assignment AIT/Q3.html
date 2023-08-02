@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geometric Shapes</title>
+</head>
+<body>
+  <center><h2>Geometric Shapes using canvas</h2>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw a rectangle
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(50, 50, 100, 80);
+
+   // Draw a triangle
+    ctx.fillStyle = 'pink';
+    ctx.beginPath();
+    ctx.moveTo(300, 50);
+    ctx.lineTo(350, 150);
+    ctx.lineTo(250, 150);
+    ctx.closePath();
+    ctx.fill();
+
+   // Draw an ellipse
+    ctx.fillStyle = 'yellow';
+    ctx.beginPath();
+    ctx.ellipse(250, 300, 80, 50, 0, 0, Math.PI * 2, false);
+    ctx.fill();
+  </script>
+  </center>
+</body>
+</html>
